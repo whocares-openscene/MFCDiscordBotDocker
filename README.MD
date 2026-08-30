@@ -11,3 +11,5 @@ Build image
 Run compose file
 
     docker compose up --remove-orphans --force-recreate   
+
+May need to chmod 666 mfcbot.db
