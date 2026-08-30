@@ -1,0 +1,9 @@
+services:
+  mfcbot:
+    build: .
+    user: 1001:1001
+    entrypoint: ["/usr/bin/env", "sh", "/app/run.sh"]
+    volumes:
+      - ./mfcbot.db:/app/mfcbot.db
+      - ./.env:/app/.env
+    restart: unless-stopped
