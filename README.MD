@@ -12,4 +12,4 @@ Run compose file
 
     docker compose up --remove-orphans --force-recreate   
 
-May need to chmod 666 mfcbot.db
+If user running is not uid 1001 or in group 1001 may need to chmod 666 mfcbot.db
