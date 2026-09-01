@@ -4,9 +4,15 @@ Docker build and compose for the MFCDiscordBot.
 
 Update example.env with your bot information and move to .env
 
+Download and unzip files
+
+    wget https://github.com/whocares-openscene/MFCDiscordBotDocker/archive/refs/heads/main.zip
+    unzip main.zip
+    cd MFCDiscordBotDocker-main
+
 Build image
 
-    docker build -t mfcbot .
+    docker build -t mfcbot --no-cache .
 
 Run compose file
 
