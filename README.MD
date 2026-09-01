@@ -6,7 +6,7 @@ Update example.env with your bot information and move to .env
 
 Build image
 
-    docker compose build --no-cache
+    docker build -t mfcbot .
 
 Run compose file
 

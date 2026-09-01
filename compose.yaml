@@ -1,6 +1,6 @@
 services:
   mfcbot:
-    build: .
+    image: mfcbot
     user: 1001:1001
     entrypoint: ["/usr/bin/env", "sh", "/app/run.sh"]
     volumes:
@@ -9,7 +9,6 @@ services:
     restart: unless-stopped
     depends_on:
       - mfcgo
-
 
   mfcgo:
     image: mfcgo
