@@ -6,9 +6,7 @@ services:
     volumes:
       - ./mfcbot.db:/app/mfcbot.db
       - ./.env:/app/.env
-      - /home/joeln/MFCBot/MFCDiscordBot/:/app/
-      - ./run.sh:/app/run.sh
-    ##restart: unless-stopped
+    restart: unless-stopped
     depends_on:
       - mfcgo
 
