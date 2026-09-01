@@ -15,6 +15,4 @@ services:
 
   mfcgo:
     image: mfcgo
-    ports: 
-      - 80:80
     restart: unless-stopped
